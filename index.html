@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator | Javascript</title>
+  <link rel="shortcut icon" href="calculator.jpg" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <input type="text"  id="screen" disabled>
+<div>
+    <div>
+      <button class="btn" onclick="appendNumber('7')">7</button>
+      <button class="btn" onclick="appendNumber('8')">8</button>
+      <button class="btn" onclick="appendNumber('9')">9</button>
+      <button class="btn" id="operator" onclick="appendOperator('+')">+</button>
+    </div>
+
+    <div>
+      <button class="btn" onclick="appendNumber('4')">4</button>
+      <button class="btn" onclick="appendNumber('5')">5</button>
+      <button class="btn" onclick="appendNumber('6')">6</button>
+      <button class="btn" id="operator" onclick="appendOperator('-')">-</button>
+    </div>
+
+    <div>
+      <button class="btn" onclick="appendNumber('1')">1</button>
+      <button class="btn" onclick="appendNumber('2')">2</button>
+      <button class="btn" onclick="appendNumber('3')">3</button>
+      <button class="btn" id="operator" onclick="appendOperator('*')">*</button>
+    </div>
+
+    <div>
+      <button class="btn" id="zero" onclick="appendNumber('0')">0</button>
+      <button class="btn" id="equal" onclick="calculate()">=</button>
+      <button class="btn" id="operator" onclick="appendOperator('/')">/</button>
+    </div>
+    <div>
+      <button class="btn" id="operator" style="width: 100%; border-radius: 10px;background-color: #A5A5A5;" onclick="clearScreen()">Clear</button>
+    </div>
+  </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
